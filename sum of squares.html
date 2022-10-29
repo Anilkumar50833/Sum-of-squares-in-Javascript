@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square's</title>
+</head>
+<body>
+    
+    <script>
+           var arr =[];   //take one empty array
+           var val = prompt("enter the number to  sum of squares to stop -1") // here we can give inputs values to sum of squares.
+           var n = parseInt(val); // here to convert to string to numbers.
+           while( n != -1) // here to check the value is equal to -1. or not .
+           {
+                arr.push(n); //here to push into array.
+                var val = prompt('enter the number  sum of squares to stop -1'); // here Again can  give inputs values to sum of squares.
+                var n =parseInt(val);
+           }
+           //this is normal calculations.
+           var total =0;
+           for (var i=0; i<arr.length ; i++)
+            {
+                total = total + arr[i] * arr[i] ;
+            }
+            document.write('SUM OF SQUARES OF GIVEN NUMBERS IS = '+total+"");
+
+            
+    </script>
+</body>
+</html>
